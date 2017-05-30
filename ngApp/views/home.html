@@ -1,0 +1,20 @@
+<table class='table table-bordered table-striped'>
+  <thead>
+    <tr>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Year</th>
+      <th>Edit Car</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='car in controller.cars'>
+        <td>
+          <a ui-sref="about({id: car._id})">{{car.make}}</a>
+        </td>
+        <td><span class='glyphicon glyphicon-fire'></span>{{car.carModel}}</td>
+        <td>{{car.year}}</td>
+        <td><a ui-sref='editCar({id: car._id})'>Edit</a></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,16 @@
+<form ng-submit='controller.editCar()'>
+
+    <label>Make</label>
+    <input type="text" placeholder="Make" ng-model='controller.car.make'/>
+
+    <label>Model</label>
+    <input type="text" placeholder="Model" ng-model='controller.car.carModel'/>
+
+    <label>Year</label>
+    <input type="number" placeholder="Year" ng-model='controller.car.year'/>
+
+    <input type='submit' value='Edit' class='btn btn-primary'/>
+
+</form>
+
+<p>{{controller.message}}</p>
